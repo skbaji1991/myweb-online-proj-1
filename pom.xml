@@ -37,13 +37,25 @@
 		</repository>
   	</distributionManagement>
 	
-	<pluginRepositories>
+	<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.0</version>
+            <configuration>
+                <release>11</release>
+                <fork>true</fork>
+                <executable>C:\Program Files\Java\jdk-11.0.2\bin\javac</executable>
+            </configuration>
+        </plugin>
+	
+	
+	//<pluginRepositories>
 	    <pluginRepository>    
 		<id>maven1</id>
 		<name>Maven.org</name>
 		<url>http://repo1.maven.org/maven2</url>
 	    </pluginRepository>
-	</pluginRepositories>
+	//</pluginRepositories>
 
 	
 </project>
